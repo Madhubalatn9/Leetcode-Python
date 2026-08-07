@@ -12,7 +12,7 @@ class solution:
           while(list2 is not None):
                list_arr.append(list2.val)
                list2=list2.next
-
+          print(len(list_arr))
           list_arr.sort()
 
           dummy=solution(0)
