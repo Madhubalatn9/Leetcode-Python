@@ -45,10 +45,22 @@ class BinaryTree:
             self.recRemove(data,node.left)
         if node.right:
             self.recRemove(data,node.right)
+    def search(self,data):
+        nodefound=self.recSearch(data,self.root)
 
-       
+        if nodefound:
+            print("true")
+        else:
+            print("false")
+    def recSearch(self,data,node):
+        if node is None:
+            return None
+        if  node.data==data:
+            return node
+        return self.recSearch(data,node.left) or self.recSearch(data,node.right)
+
+
 bt=BinaryTree()
-bt.add(1)
 bt.add(2)
 bt.add(3)
 bt.add(4)
@@ -59,5 +71,7 @@ bt.display()
 bt.remove(4)
 print("After remove element:")
 bt.display()
+bt.search(9)
+
 
     
