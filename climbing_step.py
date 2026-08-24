@@ -1,5 +1,8 @@
 
 # climbing step
+# this climbing step follows a fibonnaci series 
+
+
 n=2
 prev1=0
 prev=1
