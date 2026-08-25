@@ -198,29 +198,61 @@
 
 # print(ord('💐'))
 
-# charTitle="AB"
+# charTitle=1
 # result=0
-# for char in charTitle:
-#     char_value=ord(char)-ord('A')+1
-#     result=result*26+ char_value
-# print(result)    
 
-nums = [8,2,3,4,6]
-k = 2
-num_set=set(nums)
-print(num_set)
-i=1
+# char_value=charTitle-ord('A')+1
+# result=result*26+ char_value
+# print()    
+
+# nums = [8,2,3,4,6]
+# k = 2
+# num_set=set(nums)
+# print(num_set)
+# i=1
 
 
-while True:
-    mul=i*k
+# while True:
+#     mul=i*k
     
-    if mul not in num_set:
-        print(mul)
-        break
-    i+=1
+#     if mul not in num_set:
+#         print(mul)
+#         break
+#     i+=1
 
 
+ 
+# s = "IceCreAm"
+# vowels="aeiouAEIOU"
 
+# if any(char in vowels for char in s) :
+#     reverse=vowels[::-1]
+#     print(reverse)
+
+n=3
+
+ans=[]
+
+for i in range(1,n+1):
+   if(i%3!=0 or i%5!=0):
+      ans.append(i)
+   elif(i%3==0 and i%5==0 ):
+      i="FizzBuzz"
+      ans.append(i)
+   elif(i%3==0):
+      i="Fizz"
+      print(i)
+      ans.append(i)
+   elif(i%5==0):
+      i="Buzz"
+      ans.append(i)
+   
+
+str_ans=[str(x) for x in ans]
+
+print(str_ans)
+      
+      
+    
 
    
