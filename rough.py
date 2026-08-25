@@ -85,21 +85,142 @@
 # bi=int("".join(map(str,list1)),2)
 # print(bi)
 
-nums=[2,1,3]
+# nums=[2,1,3]
 
-arr1=[]
-arr2=[]
+# arr1=[]
+# arr2=[]
 
-n=len(arr1)
-m=len(arr2)
+# n=len(arr1)
+# m=len(arr2)
 
-arr1.append(nums[0])
+# arr1.append(nums[0])
 
-arr2.append(nums[1])
-for i in range(2,len(nums)):
-      if (arr1[n-1]>arr2[n-1]):
-        arr1.append(nums[i])
-      else:
-        arr2.append(nums[i])
-res=arr1+arr2
-print(res)
+# arr2.append(nums[1])
+# for i in range(2,len(nums)):
+#       if (arr1[n-1]>arr2[n-1]):
+#         arr1.append(nums[i])
+#       else:
+#         arr2.append(nums[i])
+# res=arr1+arr2
+# print(res)
+
+# nums = [4,3,2,7,8,2,3,1]
+
+# res=[]
+# for i in range(0,len(nums)+1):
+#     found=False
+    
+#     if(nums[i]==j):
+#         found=True
+#         break
+            
+#     if found==False:
+#         res.append(i)
+# print(res)
+
+# nums = [1,3,4,2,2]
+
+# for i in range(0,len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if(nums[i]==nums[j]):
+#             print(nums[i])
+       
+# s = "A man, a plan, a canal: Panama"
+# s=s.lower()
+# print(s)
+# result = "".join(filter(str.isalnum, s))
+# print(result)
+# if(result==result[::-1]):
+#     print("true")
+
+# s = "pwwwke"
+# li=list(s)
+# print(li)
+# res=set(li)
+# print(res)
+# print(len(res))
+
+# num1=[1,2,2,1]
+# num2=[2,2]
+
+# for i in range(len(num1)):
+#     for j in range(len(num2)):
+#         if(num1[i]==num2[j]):
+#             print(num1[i])
+
+# Run this in Python to get the exact 10,000 element array string
+# 
+# Generate a 1,000-element list string (well under character limits)
+# 
+# print(list(range(1, 1001)))
+# n=10
+# original=n
+
+# digit=[]
+# while original>0:
+#  digit.insert(0,original%10)
+
+#  original//=10
+ 
+# for i in range(len(digit)):
+#    for j in range(1,len(digit)):
+#      sum=digit[i]+digit[j]
+#      product=digit[i]*digit[j]
+#      if(sum+product==n):
+#       print("true")
+#      else:
+
+#       print("false")
+# print (digit)
+
+# 3 Sum
+
+# nums = [-1,0,1,2,-1,-4]
+# res=[]
+
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         for k in range(j+1,len(nums)):
+#             if(nums[i]+nums[j]+nums[k]==0):
+#                 res.append([nums[i],nums[j],nums[k]])
+                
+#             print(res)
+
+
+#climbing step
+# n=2
+# prev1=0
+# prev=1
+
+# for _ in range(n):
+#   prev1,prev=prev,prev1+prev
+# print (prev)
+
+# print(ord('💐'))
+
+# charTitle="AB"
+# result=0
+# for char in charTitle:
+#     char_value=ord(char)-ord('A')+1
+#     result=result*26+ char_value
+# print(result)    
+
+nums = [8,2,3,4,6]
+k = 2
+num_set=set(nums)
+print(num_set)
+i=1
+
+
+while True:
+    mul=i*k
+    
+    if mul not in num_set:
+        print(mul)
+        break
+    i+=1
+
+
+
+
+   
