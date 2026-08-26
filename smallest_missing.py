@@ -16,5 +16,5 @@ class Solution:
 
 obj=Solution()
 
-obj1=obj.missingMultiple(3)
-print(obj.missingMultiple(3))
+
+print(obj.missingMultiple([8,2,3,4,6],2))
